@@ -23,8 +23,8 @@ psf_plot <- function (data, predictions, cycle = 24, ...) {
 
   if (length(args) == 0)
   {
-    plot(window(all, end = time(all)[length(all) - length(predictions)]), xlim = c(time(all)[1], time(all)[length(all)]), xlab = "Time", ylab = "Value")
-    points(window(all, start = time(all)[length(all) - length(predictions) + 1]), type = "o", col = "blue", lty = 3, pch = 16, cex = 0.4)
+    plot(window(all, end = time(all)[length(all) - length(predictions)]), xlim = c(time(all)[1], time(all)[length(all)]), xlab = "year", ylab = "mortality rate (%)")
+    points(window(all, start = time(all)[length(all) - length(predictions) + 1]), type = "o", col = "blue", lty = 3, pch = 16, cex = 0.7)
   }
   else
   {
